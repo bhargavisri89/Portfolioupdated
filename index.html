@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhargavi Bandaru — Professional Academic & AI Portfolio</title>
+  
+  <!-- Font Integrations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            customBg: '#F2F0E9',
+            customAccent: '#4D5940',
+            customText: '#2D2D2A'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #F2F0E9;
+      color: #2D2D2A;
+    }
+    .active-tab-btn {
+      color: #4D5940;
+      border-bottom: 2px solid #4D5940;
+    }
+    .active-filter-pill {
+      background-color: #4D5940;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-stone-200 font-serif">
+
+  <!-- Header Nav -->
+  <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-stone-200/50 py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="text-center sm:text-left">
+        <h1 class="text-xl font-bold font-serif tracking-tight text-stone-900">Bhargavi Bandaru</h1>
+        <p class="text-[10px] font-bold uppercase tracking-widest text-stone-400 font-sans mt-0.5">UX Designer </p>
+      </div>
+
+      <!-- Navigation tabs -->
+      <nav class="flex items-center gap-6 md:gap-8 font-sans text-xs font-semibold tracking-wider uppercase text-stone-500">
+        <button onclick="switchTab('home')" id="tab-btn-home" class="tab-btn hover:text-stone-900 pb-1 cursor-pointer transition-colors active-tab-btn">Home</button>
+        <button onclick="switchTab('about')" id="tab-btn-about" class="tab-btn hover:text-stone-900 pb-1 cursor-pointer transition-colors">About Me</button>
+        <button onclick="switchTab('projects')" id="tab-btn-projects" class="tab-btn hover:text-stone-900 pb-1 cursor-pointer transition-colors">Projects</button>
+        <button onclick="switchTab('contact')" id="tab-btn-contact" class="tab-btn hover:text-stone-900 pb-1 cursor-pointer transition-colors">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Views Container -->
+  <main class="flex-grow">
+    
+    <!-- ================= HOME VIEW ================= -->
+    <div id="view-home" class="view-section">
+      <!-- Hero -->
+      <section class="max-w-6xl mx-auto px-6 py-12 md:py-20 text-center space-y-6">
+        <div class="inline-block relative">
+          <div class="w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-stone-300 shadow-sm mx-auto">
+            <img 
+              src="/src/assets/images/regenerated_image_1783803978065.jpg" 
+              alt="Bhargavi Bandaru"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80';"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="max-w-2xl mx-auto space-y-4">
+          <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400 font-sans">Graduate Academic Portfolio</p>
+          <h2 class="text-3xl md:text-5xl font-bold tracking-tight font-serif text-stone-900 leading-tight">
+            Hi, I'm Bhargavi Bandaru
+          </h2>
+          <p class="text-sm md:text-base text-stone-600 font-sans tracking-wide leading-relaxed font-light">
+            UX Designer | AI Graduate Student | Data Analytics Enthusiast
+          </p>
+          
+          <div class="pt-4 flex justify-center gap-3">
+            <button onclick="switchTab('projects')" class="px-5 py-2.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm">
+              Explore Artifacts
+            </button>
+            <button onclick="switchTab('about')" class="px-5 py-2.5 bg-white hover:bg-stone-50 text-stone-800 border border-stone-200 rounded-lg text-xs font-semibold font-sans tracking-wide transition-all">
+              Read My Bio
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teaser Summary -->
+      <section class="max-w-4xl mx-auto px-6 py-8 border-t border-stone-200/50">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+          <div class="md:col-span-1">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Executive Bio</span>
+            <h3 class="text-xl font-bold tracking-tight font-serif text-stone-900 mt-1">Human-Centered AI & Analytics</h3>
+          </div>
+          <div class="md:col-span-2 text-left space-y-3">
+            <p class="text-stone-600 leading-relaxed font-sans text-xs md:text-sm">
+              I combine human-centered design, data analytics, and AI to create thoughtful solutions that improve user experiences and drive informed decision-making.
+            </p>
+            <button onclick="switchTab('about')" class="inline-flex items-center gap-1 text-xs font-bold font-sans text-stone-900 hover:underline">
+              <span>Read Full Executive Biography</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Work -->
+      <section class="py-12 md:py-16 text-white rounded-[32px] max-w-5xl mx-auto my-8 px-6 md:px-12 shadow-xl" style="background-color: #4D5940">
+        <div class="max-w-4xl mx-auto space-y-8 text-left">
+          <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold tracking-tight font-serif text-white">Featured Work Highlights</h2>
+              <p class="text-xs text-white/70 font-sans mt-1">Core coursework artifacts selected for quick review.</p>
+            </div>
+            <button onclick="switchTab('projects')" class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-white/20 hover:bg-white/30 text-xs font-semibold tracking-wider font-sans uppercase transition-all">
+              <span>See All</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/10 space-y-4 hover:bg-white/15 transition-all">
+      <div class="h-32 rounded-lg bg-white/5 overflow-hidden">
+        <img 
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+          alt="The Speaker&#039;s Bureau"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="space-y-1 text-left">
+        <h3 class="text-base font-bold text-white line-clamp-1">The Speaker&#039;s Bureau</h3>
+        <p class="text-xs text-white/70 line-clamp-2">The AI Speaker&#039;s Bureau was a collaborative AI Lab project focused on applying generative AI, prompt engineering, user-centered interviewing, and AI system design to create an intelligent speaker recommendation system.</p>
+      </div>
+      <div class="flex justify-between items-center pt-2">
+        <span class="text-[9px] uppercase tracking-widest text-white/50 font-mono">Coursework Highlight</span>
+        <button 
+          type="button" 
+          onclick="navigateToProjects('p1')"
+          class="inline-flex items-center gap-1 text-[10px] font-bold text-white uppercase font-sans hover:underline"
+        >
+          <span>View</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/10 space-y-4 hover:bg-white/15 transition-all">
+      <div class="h-32 rounded-lg bg-white/5 overflow-hidden">
+        <img 
+          src="/src/assets/images/regenerated_image_1783803996486.jpg" 
+          alt="AI History Research &amp; Visual Timeline"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="space-y-1 text-left">
+        <h3 class="text-base font-bold text-white line-clamp-1">AI History Research &amp; Visual Timeline</h3>
+        <p class="text-xs text-white/70 line-clamp-2">This shows the historical evolution of Artificial Intelligence and transforming complex technical developments into a clear, engaging visual timeline.</p>
+      </div>
+      <div class="flex justify-between items-center pt-2">
+        <span class="text-[9px] uppercase tracking-widest text-white/50 font-mono">Coursework Highlight</span>
+        <button 
+          type="button" 
+          onclick="navigateToProjects('p2')"
+          class="inline-flex items-center gap-1 text-[10px] font-bold text-white uppercase font-sans hover:underline"
+        >
+          <span>View</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/10 space-y-4 hover:bg-white/15 transition-all">
+      <div class="h-32 rounded-lg bg-white/5 overflow-hidden">
+        <img 
+          src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+          alt="AI Powered Custom Bot"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="space-y-1 text-left">
+        <h3 class="text-base font-bold text-white line-clamp-1">AI Powered Custom Bot</h3>
+        <p class="text-xs text-white/70 line-clamp-2">An intelligent, responsive chatbot assistant featuring dynamic conversation buffers, customized model parameter sliders, and structured markdown text rendering.</p>
+      </div>
+      <div class="flex justify-between items-center pt-2">
+        <span class="text-[9px] uppercase tracking-widest text-white/50 font-mono">Coursework Highlight</span>
+        <button 
+          type="button" 
+          onclick="navigateToProjects('p3')"
+          class="inline-flex items-center gap-1 text-[10px] font-bold text-white uppercase font-sans hover:underline"
+        >
+          <span>View</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= ABOUT ME VIEW ================= -->
+    <div id="view-about" class="view-section hidden max-w-4xl mx-auto px-6 py-12 space-y-12">
+      <div class="border-b border-stone-200/50 pb-4 text-left">
+        <h2 class="text-3xl font-bold tracking-tight font-serif text-stone-900 flex items-center gap-2">
+          <i data-lucide="user" class="text-customAccent"></i>
+          <span>About Me</span>
+        </h2>
+        <p class="text-sm text-stone-500 font-sans mt-1">My background, professional philosophy, and graduate research journey.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-1 space-y-6">
+          <div class="rounded-2xl border border-stone-200 bg-white p-5 space-y-4">
+            <img 
+              src="/src/assets/images/regenerated_image_1783803978065.jpg" 
+              alt="Bhargavi Bandaru"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80';"
+              class="w-full aspect-square object-cover rounded-xl border border-stone-200"
+            />
+            <div class="space-y-1 text-center md:text-left">
+              <h3 class="font-bold text-stone-900 text-sm font-sans">Bhargavi Bandaru</h3>
+              <p class="text-xs text-stone-500 font-sans">UX Designer </p>
+            </div>
+            <div class="border-t border-stone-100 pt-3 space-y-2">
+              <div class="flex items-center gap-2 text-xs text-stone-600">
+                <i data-lucide="mail" class="w-4 h-4 text-stone-400"></i>
+                <span class="truncate font-sans">bhargavisri205@gmail.com</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-stone-600">
+                <i data-lucide="award" class="w-4 h-4 text-stone-400"></i>
+                <span class="font-sans">Indiana Wesleyan MS AI Student</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 text-left space-y-6">
+          <div class="space-y-4">
+            
+        <p class="text-stone-700 leading-relaxed font-serif text-sm md:text-base">With over six years of experience in UX design, I enjoy solving complex problems by understanding user behavior, analyzing data, and designing intuitive, accessible, and user-centered solutions.</p>
+      
+        <p class="text-stone-700 leading-relaxed font-serif text-sm md:text-base">My professional journey has allowed me to work across research, interaction design, usability testing, design systems, and data-driven decision-making.</p>
+      
+        <p class="text-stone-700 leading-relaxed font-serif text-sm md:text-base">Currently, I am pursuing a Master of Science in Artificial Intelligence with a specialization in Data Analytics at Indiana Wesleyan University. This portfolio showcases the assignments, projects, and learning artifacts I completed throughout my coursework. Each artifact reflects my understanding of AI, analytics, leadership, ethics, data visualization, and practical problem-solving while demonstrating my growth as both a designer and an aspiring AI professional.</p>
+      
+        <p class="text-stone-700 leading-relaxed font-serif text-sm md:text-base">Beyond academics, I am passionate about photography, travel, creativity, and lifelong learning. I believe that combining human-centered design with data and AI has the power to create innovative solutions that improve people&#039;s lives.</p>
+      
+        <p class="text-stone-700 leading-relaxed font-serif text-sm md:text-base">This portfolio represents not only my academic achievements but also my commitment to continuous learning, critical thinking, collaboration, and professional growth.</p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= PROJECTS VIEW ================= -->
+    <div id="view-projects" class="view-section hidden max-w-6xl mx-auto px-6 py-12 space-y-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-stone-200/50 pb-4 gap-4 text-left">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight font-serif text-stone-900 flex items-center gap-2">
+            <i data-lucide="folder" class="text-customAccent"></i>
+            <span>Coursework Projects & Artifacts</span>
+          </h2>
+          <p class="text-sm text-stone-500 font-sans mt-1">Review the assignments, blueprints, and timeline projects created during my academic residency.</p>
+        </div>
+      </div>
+
+      <!-- Search and Filter Panel -->
+      <div class="flex flex-col sm:flex-row justify-between gap-4 bg-white/40 p-4 rounded-xl border border-stone-200/50 backdrop-blur-sm">
+        <!-- Search bar -->
+        <div class="relative flex-grow max-w-md">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+            <i data-lucide="search" class="text-stone-400 w-4 h-4"></i>
+          </span>
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search projects, tags, or coursework..." 
+            oninput="filterProjects()"
+            class="w-full pl-9 pr-4 py-2 border border-stone-200 rounded-lg text-sm bg-white/80 focus:outline-none focus:ring-1 focus:ring-stone-500 font-sans"
+          />
+        </div>
+
+        <!-- Category selector -->
+        <div class="flex flex-wrap items-center gap-2 font-sans text-xs font-semibold tracking-wider uppercase">
+          <button onclick="setProjectFilter('all')" id="filter-all" class="px-3.5 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50 cursor-pointer active-filter-pill">All</button>
+          <button onclick="setProjectFilter('featured')" id="filter-featured" class="px-3.5 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50 cursor-pointer">Featured Highlights</button>
+          <button onclick="setProjectFilter('artifact')" id="filter-artifact" class="px-3.5 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50 cursor-pointer">Coursework Artifacts</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid-container">
+        
+      <div 
+        class="project-card bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-stone-300"
+        data-category="featured"
+        data-title="the speaker&#039;s bureau"
+        data-tags="generative ai,user interviewing,prompt engineering,system design"
+        data-description="the ai speaker&#039;s bureau was a collaborative ai lab project focused on applying generative ai, prompt engineering, user-centered interviewing, and ai system design to create an intelligent speaker recommendation system."
+      >
+        <div class="relative h-48 bg-stone-100 overflow-hidden group">
+          <img 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+            alt="The Speaker&#039;s Bureau"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans bg-[#4D5940] text-white shadow-sm border border-stone-200/20">
+              Featured Highlight
+            </span>
+          </div>
+        </div>
+        
+        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold tracking-tight text-stone-900 line-clamp-1">The Speaker&#039;s Bureau</h3>
+            <p class="text-sm text-stone-600 leading-relaxed line-clamp-3">The AI Speaker&#039;s Bureau was a collaborative AI Lab project focused on applying generative AI, prompt engineering, user-centered interviewing, and AI system design to create an intelligent speaker recommendation system.</p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5">
+              
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Generative AI
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #User Interviewing
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Prompt Engineering
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #System Design
+      </span>
+    
+            </div>
+
+            <!-- Attachments / Downloads -->
+            
+              <div class="space-y-1.5">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Project Files</div>
+                <div class="flex flex-wrap gap-1.5">
+                  
+        <a 
+          href="data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvUmVzb3VyY2VzIDw8IC9Gb250IDw8IC9GMSA8PCAvVHlwZSAvRm9udCAvU3VidHlwZSAvVHlwZTEgL0Jhc2VGb250IC9IZWx2ZXRpY2EgPj4gPj4gPj4gL0NvbnRlbnRzIDQgMCBSID4+CmVuZG9iago0IDAgb2JqCjw8IC9MZW5ndGggMzAwID4+CnN0cmVhbQpCVAovRjEgMTggVGYKNzAgNzUwIFRkCihUSEUgTUFESU5HIE9GIFRoZSBTcGVha2VyJ3MgQnVyZWF1KSBUagpFVApCVAovRjEgMTIgVGYKNzAgNzIwIFRkCihBSU1MLTUwMCAtIFJFU0lERU5DWSBQUk9KRUNUKSBUagpFVApCVAovRjEgMTEgVGYKNzAgNjkwIFRkCihBdXRob3I6IEJoYXJnYXZpIEJhbmRhcnUpIFRqCkVVCkJUCi9GMSAxMCBUZgo3MCA2NjAgVGQKKENvdXJzZXdvcmsgYXJ0aWZhY3QgZGVtb25zdHJhdGluZyBBcnRpZmljaWFsIEludGVsbGlnZW5jZSBhbmQgRGF0YSBBbmFseXRpY3Mgc3lzdGVtcy4pIFRqCkVVCmVuZHN0cmVhbQplbmRvYmoKdHJhaWxlcgo8PCAvU2l6ZSA1IC9Sb290IDEgMCBSID4+CiUlRU9G" 
+          download="The_Speakers_Bureau_Residency_Project.pdf"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">The_Speakers_Bureau_Residency_Project.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(480 KB)</span>
+        </a>
+      
+                </div>
+              </div>
+            
+
+            <!-- Footer Action Bar -->
+            <div class="flex justify-between items-center border-t border-stone-100 pt-3">
+              <div class="flex items-center gap-3">
+                
+      <a 
+        href="https://www.behance.net/bhargavisri" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Behance Case Study</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    
+              </div>
+              
+              <button 
+                type="button"
+                onclick="openProjectModal('p1')"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm cursor-pointer"
+              >
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Project Source Elements for Modal population -->
+        <div class="hidden project-modal-source" id="project-source-p1">
+          <span class="src-title">The Speaker&#039;s Bureau</span>
+          <span class="src-category-label">Featured Highlight</span>
+          <span class="src-category-color">bg-[#4D5940] text-white</span>
+          <span class="src-image">https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=600&amp;q=80</span>
+          <span class="src-desc">The AI Speaker&#039;s Bureau was a collaborative AI Lab project focused on applying generative AI, prompt engineering, user-centered interviewing, and AI system design to create an intelligent speaker recommendation system.</span>
+          <span class="src-detailed-desc">The project involved interviewing domain experts, formulating system prompts, setting up chat histories, and designing intuitive user interactions. The resulting speaker system can search through an curated database and suggest ideal industry specialists based on dynamic thematic criteria.</span>
+          <div class="src-tags-html">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Generative AI
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #User Interviewing
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Prompt Engineering
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #System Design
+      </span>
+    </div>
+          <div class="src-attachments-html">
+        <a 
+          href="data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvUmVzb3VyY2VzIDw8IC9Gb250IDw8IC9GMSA8PCAvVHlwZSAvRm9udCAvU3VidHlwZSAvVHlwZTEgL0Jhc2VGb250IC9IZWx2ZXRpY2EgPj4gPj4gPj4gL0NvbnRlbnRzIDQgMCBSID4+CmVuZG9iago0IDAgb2JqCjw8IC9MZW5ndGggMzAwID4+CnN0cmVhbQpCVAovRjEgMTggVGYKNzAgNzUwIFRkCihUSEUgTUFESU5HIE9GIFRoZSBTcGVha2VyJ3MgQnVyZWF1KSBUagpFVApCVAovRjEgMTIgVGYKNzAgNzIwIFRkCihBSU1MLTUwMCAtIFJFU0lERU5DWSBQUk9KRUNUKSBUagpFVApCVAovRjEgMTEgVGYKNzAgNjkwIFRkCihBdXRob3I6IEJoYXJnYXZpIEJhbmRhcnUpIFRqCkVVCkJUCi9GMSAxMCBUZgo3MCA2NjAgVGQKKENvdXJzZXdvcmsgYXJ0aWZhY3QgZGVtb25zdHJhdGluZyBBcnRpZmljaWFsIEludGVsbGlnZW5jZSBhbmQgRGF0YSBBbmFseXRpY3Mgc3lzdGVtcy4pIFRqCkVVCmVuZHN0cmVhbQplbmRvYmoKdHJhaWxlcgo8PCAvU2l6ZSA1IC9Sb290IDEgMCBSID4+CiUlRU9G" 
+          download="The_Speakers_Bureau_Residency_Project.pdf"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">The_Speakers_Bureau_Residency_Project.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(480 KB)</span>
+        </a>
+      </div>
+          <div class="src-links-html">
+      <a 
+        href="https://www.behance.net/bhargavisri" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Behance Case Study</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+        </div>
+      </div>
+    
+      <div 
+        class="project-card bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-stone-300"
+        data-category="featured"
+        data-title="ai history research &amp; visual timeline"
+        data-tags="data visualisation,historical research,infographic design"
+        data-description="this shows the historical evolution of artificial intelligence and transforming complex technical developments into a clear, engaging visual timeline."
+      >
+        <div class="relative h-48 bg-stone-100 overflow-hidden group">
+          <img 
+            src="/src/assets/images/regenerated_image_1783803996486.jpg" 
+            alt="AI History Research &amp; Visual Timeline"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans bg-[#4D5940] text-white shadow-sm border border-stone-200/20">
+              Featured Highlight
+            </span>
+          </div>
+        </div>
+        
+        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold tracking-tight text-stone-900 line-clamp-1">AI History Research &amp; Visual Timeline</h3>
+            <p class="text-sm text-stone-600 leading-relaxed line-clamp-3">This shows the historical evolution of Artificial Intelligence and transforming complex technical developments into a clear, engaging visual timeline.</p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5">
+              
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Data Visualisation
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Historical Research
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Infographic Design
+      </span>
+    
+            </div>
+
+            <!-- Attachments / Downloads -->
+            
+              <div class="space-y-1.5">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Project Files</div>
+                <div class="flex flex-wrap gap-1.5">
+                  
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">AI_History_Visual_Timeline.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(4.8 MB)</span>
+        </a>
+      
+                </div>
+              </div>
+            
+
+            <!-- Footer Action Bar -->
+            <div class="flex justify-between items-center border-t border-stone-100 pt-3">
+              <div class="flex items-center gap-3">
+                
+      <a 
+        href="https://www.behance.net/bhargavisri" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Interactive Timeline Site</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    
+              </div>
+              
+              <button 
+                type="button"
+                onclick="openProjectModal('p2')"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm cursor-pointer"
+              >
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Project Source Elements for Modal population -->
+        <div class="hidden project-modal-source" id="project-source-p2">
+          <span class="src-title">AI History Research &amp; Visual Timeline</span>
+          <span class="src-category-label">Featured Highlight</span>
+          <span class="src-category-color">bg-[#4D5940] text-white</span>
+          <span class="src-image">/src/assets/images/regenerated_image_1783803996486.jpg</span>
+          <span class="src-desc">This shows the historical evolution of Artificial Intelligence and transforming complex technical developments into a clear, engaging visual timeline.</span>
+          <span class="src-detailed-desc">A comprehensive timeline showcasing key historical achievements in machine learning, neural networks, and modern deep learning models. Visual elements emphasize pivotal figures, mathematical breakthroughs, and shifts in industry focus (the AI Winters and Springs).</span>
+          <div class="src-tags-html">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Data Visualisation
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Historical Research
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Infographic Design
+      </span>
+    </div>
+          <div class="src-attachments-html">
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">AI_History_Visual_Timeline.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(4.8 MB)</span>
+        </a>
+      </div>
+          <div class="src-links-html">
+      <a 
+        href="https://www.behance.net/bhargavisri" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Interactive Timeline Site</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+        </div>
+      </div>
+    
+      <div 
+        class="project-card bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-stone-300"
+        data-category="featured"
+        data-title="ai powered custom bot"
+        data-tags="ui prototyping,chatbot design,parameter tuning,react"
+        data-description="an intelligent, responsive chatbot assistant featuring dynamic conversation buffers, customized model parameter sliders, and structured markdown text rendering."
+      >
+        <div class="relative h-48 bg-stone-100 overflow-hidden group">
+          <img 
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+            alt="AI Powered Custom Bot"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans bg-[#4D5940] text-white shadow-sm border border-stone-200/20">
+              Featured Highlight
+            </span>
+          </div>
+        </div>
+        
+        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold tracking-tight text-stone-900 line-clamp-1">AI Powered Custom Bot</h3>
+            <p class="text-sm text-stone-600 leading-relaxed line-clamp-3">An intelligent, responsive chatbot assistant featuring dynamic conversation buffers, customized model parameter sliders, and structured markdown text rendering.</p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5">
+              
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #UI Prototyping
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Chatbot Design
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Parameter Tuning
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #React
+      </span>
+    
+            </div>
+
+            <!-- Attachments / Downloads -->
+            
+              <div class="space-y-1.5">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Project Files</div>
+                <div class="flex flex-wrap gap-1.5">
+                  
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Custom_Bot_Context_Guides.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(850 KB)</span>
+        </a>
+      
+                </div>
+              </div>
+            
+
+            <!-- Footer Action Bar -->
+            <div class="flex justify-between items-center border-t border-stone-100 pt-3">
+              <div class="flex items-center gap-3">
+                
+      <a 
+        href="https://github.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Live Demo App</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    
+              </div>
+              
+              <button 
+                type="button"
+                onclick="openProjectModal('p3')"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm cursor-pointer"
+              >
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Project Source Elements for Modal population -->
+        <div class="hidden project-modal-source" id="project-source-p3">
+          <span class="src-title">AI Powered Custom Bot</span>
+          <span class="src-category-label">Featured Highlight</span>
+          <span class="src-category-color">bg-[#4D5940] text-white</span>
+          <span class="src-image">https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&amp;fit=crop&amp;w=600&amp;q=80</span>
+          <span class="src-desc">An intelligent, responsive chatbot assistant featuring dynamic conversation buffers, customized model parameter sliders, and structured markdown text rendering.</span>
+          <span class="src-detailed-desc">Designed an interactive chatbot interface with high-fidelity components to control temperature, top-p, and max tokens. Implemented custom context guides and real-time response rendering via simulated token streams.</span>
+          <div class="src-tags-html">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #UI Prototyping
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Chatbot Design
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Parameter Tuning
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #React
+      </span>
+    </div>
+          <div class="src-attachments-html">
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Custom_Bot_Context_Guides.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(850 KB)</span>
+        </a>
+      </div>
+          <div class="src-links-html">
+      <a 
+        href="https://github.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Live Demo App</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+        </div>
+      </div>
+    
+      <div 
+        class="project-card bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-stone-300"
+        data-category="artifact"
+        data-title="designer portfolio wireframing"
+        data-tags="wireframing,layout design,responsive web"
+        data-description="a sleek and comprehensive ux designer portfolio featuring end-to-end case studies, customizable mobile layout wireframes, high-contrast creative typography, and dark minimalist interactive showcases."
+      >
+        <div class="relative h-48 bg-stone-100 overflow-hidden group">
+          <img 
+            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+            alt="Designer Portfolio Wireframing"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans bg-[#E5E2D9] text-[#2D2D2A] shadow-sm border border-stone-200/20">
+              Coursework Artifact
+            </span>
+          </div>
+        </div>
+        
+        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold tracking-tight text-stone-900 line-clamp-1">Designer Portfolio Wireframing</h3>
+            <p class="text-sm text-stone-600 leading-relaxed line-clamp-3">A sleek and comprehensive UX designer portfolio featuring end-to-end case studies, customizable mobile layout wireframes, high-contrast creative typography, and dark minimalist interactive showcases.</p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5">
+              
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Wireframing
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Layout Design
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Responsive Web
+      </span>
+    
+            </div>
+
+            <!-- Attachments / Downloads -->
+            
+              <div class="space-y-1.5">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Project Files</div>
+                <div class="flex flex-wrap gap-1.5">
+                  
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Mobile_Layout_Wireframes.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(3.2 MB)</span>
+        </a>
+      
+                </div>
+              </div>
+            
+
+            <!-- Footer Action Bar -->
+            <div class="flex justify-between items-center border-t border-stone-100 pt-3">
+              <div class="flex items-center gap-3">
+                
+      <a 
+        href="https://www.behance.net/bhargavisri" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Behance Design System</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    
+              </div>
+              
+              <button 
+                type="button"
+                onclick="openProjectModal('p4')"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm cursor-pointer"
+              >
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Project Source Elements for Modal population -->
+        <div class="hidden project-modal-source" id="project-source-p4">
+          <span class="src-title">Designer Portfolio Wireframing</span>
+          <span class="src-category-label">Coursework Artifact</span>
+          <span class="src-category-color">bg-[#E5E2D9] text-[#2D2D2A]</span>
+          <span class="src-image">https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;w=600&amp;q=80</span>
+          <span class="src-desc">A sleek and comprehensive UX designer portfolio featuring end-to-end case studies, customizable mobile layout wireframes, high-contrast creative typography, and dark minimalist interactive showcases.</span>
+          <span class="src-detailed-desc">An exploration of responsive portfolio design focused on accessibility guidelines, high readability in light and dark conditions, and fast navigation systems for hiring managers looking for artifacts.</span>
+          <div class="src-tags-html">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Wireframing
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Layout Design
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Responsive Web
+      </span>
+    </div>
+          <div class="src-attachments-html">
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Mobile_Layout_Wireframes.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(3.2 MB)</span>
+        </a>
+      </div>
+          <div class="src-links-html">
+      <a 
+        href="https://www.behance.net/bhargavisri" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Behance Design System</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+        </div>
+      </div>
+    
+      <div 
+        class="project-card bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-stone-300"
+        data-category="artifact"
+        data-title="travel &amp; photography"
+        data-tags="photography,media optimization,gallery ux"
+        data-description="optimizing modules for high frame rates and load times while sharing creative visual narratives from journeys across the globe."
+      >
+        <div class="relative h-48 bg-stone-100 overflow-hidden group">
+          <img 
+            src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+            alt="Travel &amp; Photography"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans bg-[#E5E2D9] text-[#2D2D2A] shadow-sm border border-stone-200/20">
+              Coursework Artifact
+            </span>
+          </div>
+        </div>
+        
+        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold tracking-tight text-stone-900 line-clamp-1">Travel &amp; Photography</h3>
+            <p class="text-sm text-stone-600 leading-relaxed line-clamp-3">Optimizing modules for high frame rates and load times while sharing creative visual narratives from journeys across the globe.</p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5">
+              
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Photography
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Media Optimization
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Gallery UX
+      </span>
+    
+            </div>
+
+            <!-- Attachments / Downloads -->
+            
+              <div class="space-y-1.5">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Project Files</div>
+                <div class="flex flex-wrap gap-1.5">
+                  
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Tones_of_Love_Portfolio.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(12.4 MB)</span>
+        </a>
+      
+                </div>
+              </div>
+            
+
+            <!-- Footer Action Bar -->
+            <div class="flex justify-between items-center border-t border-stone-100 pt-3">
+              <div class="flex items-center gap-3">
+                
+      <a 
+        href="https://www.instagram.com/tones.of.love/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Instagram Link</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    
+              </div>
+              
+              <button 
+                type="button"
+                onclick="openProjectModal('p5')"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm cursor-pointer"
+              >
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Project Source Elements for Modal population -->
+        <div class="hidden project-modal-source" id="project-source-p5">
+          <span class="src-title">Travel &amp; Photography</span>
+          <span class="src-category-label">Coursework Artifact</span>
+          <span class="src-category-color">bg-[#E5E2D9] text-[#2D2D2A]</span>
+          <span class="src-image">https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?auto=format&amp;fit=crop&amp;w=600&amp;q=80</span>
+          <span class="src-desc">Optimizing modules for high frame rates and load times while sharing creative visual narratives from journeys across the globe.</span>
+          <span class="src-detailed-desc">A custom visual media platform featuring heavy high-resolution image rendering optimized for web browsers. Includes smart image loading placeholders, and elegant gallery transitions.</span>
+          <div class="src-tags-html">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Photography
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Media Optimization
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Gallery UX
+      </span>
+    </div>
+          <div class="src-attachments-html">
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Tones_of_Love_Portfolio.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(12.4 MB)</span>
+        </a>
+      </div>
+          <div class="src-links-html">
+      <a 
+        href="https://www.instagram.com/tones.of.love/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-stone-800 hover:opacity-80 transition-all font-sans"
+      >
+        <span>Instagram Link</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+        </div>
+      </div>
+    
+      <div 
+        class="project-card bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-stone-300"
+        data-category="artifact"
+        data-title="brand unity &amp; corporate identity"
+        data-tags="visual branding,corporate guidelines,asset alignment"
+        data-description="aligning corporate messages with pixel accuracy across print, web, and presentation media."
+      >
+        <div class="relative h-48 bg-stone-100 overflow-hidden group">
+          <img 
+            src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&amp;fit=crop&amp;w=600&amp;q=80" 
+            alt="Brand Unity &amp; Corporate Identity"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=600&q=80';"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans bg-[#E5E2D9] text-[#2D2D2A] shadow-sm border border-stone-200/20">
+              Coursework Artifact
+            </span>
+          </div>
+        </div>
+        
+        <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold tracking-tight text-stone-900 line-clamp-1">Brand Unity &amp; Corporate Identity</h3>
+            <p class="text-sm text-stone-600 leading-relaxed line-clamp-3">Aligning corporate messages with pixel accuracy across print, web, and presentation media.</p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5">
+              
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Visual Branding
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Corporate Guidelines
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Asset Alignment
+      </span>
+    
+            </div>
+
+            <!-- Attachments / Downloads -->
+            
+              <div class="space-y-1.5">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Project Files</div>
+                <div class="flex flex-wrap gap-1.5">
+                  
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Corporate_Brand_Guidelines_V1.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(1.9 MB)</span>
+        </a>
+      
+                </div>
+              </div>
+            
+
+            <!-- Footer Action Bar -->
+            <div class="flex justify-between items-center border-t border-stone-100 pt-3">
+              <div class="flex items-center gap-3">
+                
+              </div>
+              
+              <button 
+                type="button"
+                onclick="openProjectModal('p6')"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-white rounded-lg text-xs font-semibold font-sans tracking-wide transition-all shadow-sm cursor-pointer"
+              >
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Project Source Elements for Modal population -->
+        <div class="hidden project-modal-source" id="project-source-p6">
+          <span class="src-title">Brand Unity &amp; Corporate Identity</span>
+          <span class="src-category-label">Coursework Artifact</span>
+          <span class="src-category-color">bg-[#E5E2D9] text-[#2D2D2A]</span>
+          <span class="src-image">https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&amp;fit=crop&amp;w=600&amp;q=80</span>
+          <span class="src-desc">Aligning corporate messages with pixel accuracy across print, web, and presentation media.</span>
+          <span class="src-detailed-desc">Designed complete visual guidelines, colors systems, and custom templates to establish professional brand authority and seamless multi-channel communication alignment.</span>
+          <div class="src-tags-html">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Visual Branding
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Corporate Guidelines
+      </span>
+    
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium font-sans bg-stone-100 text-stone-600 border border-stone-200">
+        #Asset Alignment
+      </span>
+    </div>
+          <div class="src-attachments-html">
+        <a 
+          href="#" 
+          
+          class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-stone-700 bg-stone-50 hover:bg-stone-100 border border-stone-200 rounded-md transition-colors cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+          </svg>
+          <span class="truncate max-w-[150px]">Corporate_Brand_Guidelines_V1.pdf</span>
+          <span class="text-[10px] text-stone-400 font-sans">(1.9 MB)</span>
+        </a>
+      </div>
+          <div class="src-links-html"></div>
+        </div>
+      </div>
+    
+      </div>
+
+      <!-- Empty state if no projects match -->
+      <div id="projects-empty-state" class="hidden text-center py-12 border border-dashed border-stone-300 rounded-2xl text-stone-400 font-sans">
+        <i data-lucide="alert-circle" class="w-8 h-8 mx-auto text-stone-300 mb-2"></i>
+        <p class="text-sm">No projects matching your criteria were found.</p>
+      </div>
+    </div>
+
+    <!-- ================= CONTACT VIEW ================= -->
+    <div id="view-contact" class="view-section hidden max-w-4xl mx-auto px-6 py-12 space-y-10">
+      <div class="border-b border-stone-200/50 pb-4 text-left">
+        <h2 class="text-3xl font-bold tracking-tight font-serif text-stone-900 flex items-center gap-2">
+          <i data-lucide="mail" class="text-customAccent"></i>
+          <span>Get In Touch</span>
+        </h2>
+        <p class="text-sm text-stone-500 font-sans mt-1">Let's collaborate, discuss research, or share insights on AI and UX.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start text-left">
+        <!-- Bio and Details -->
+        <div class="space-y-6">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-stone-900">Collaboration & Consultation</h3>
+            <p class="text-stone-600 text-sm leading-relaxed font-sans">
+              I am always eager to connect with designers, researchers, and AI enthusiasts. Feel free to reach out via email or LinkedIn for academic inquiry, professional collaborations, or system designs.
+            </p>
+          </div>
+
+          <div class="space-y-3.5 font-sans text-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-white border border-stone-200 flex items-center justify-center text-stone-600">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400">Email Address</div>
+                <a href="mailto:bhargavisri205@gmail.com" class="text-stone-800 hover:underline font-semibold">bhargavisri205@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-white border border-stone-200 flex items-center justify-center text-stone-600">
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400">LinkedIn Profile</div>
+                <a href="https://www.linkedin.com/in/bhargavibandaru/" target="_blank" rel="noopener noreferrer" class="text-stone-800 hover:underline font-semibold">Connect with Me</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-white border border-stone-200 flex items-center justify-center text-stone-600">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400">Graduate Specialization</div>
+                <span class="text-stone-800 font-semibold">Data Analytics & Artificial Intelligence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capabilities Section integrated inside Contact / Overview as summary -->
+        <div class="bg-white/60 backdrop-blur-sm border border-white/50 rounded-2xl p-6 shadow-sm space-y-6">
+          <h3 class="text-lg font-bold tracking-tight text-stone-900 flex items-center gap-2">
+            <i data-lucide="award" class="text-customAccent"></i>
+            <span>Core Competencies</span>
+          </h3>
+          <div class="space-y-4">
+            
+    <div class="space-y-2 p-3 rounded-lg hover:bg-stone-50 transition-colors duration-300 text-left">
+      <div class="flex justify-between text-sm font-semibold">
+        <span class="opacity-90 text-stone-800">UI/UX Design</span>
+        <span class="font-mono text-xs text-customAccent">95%</span>
+      </div>
+      <div class="w-full bg-stone-200/50 rounded-full h-2 overflow-hidden backdrop-blur-sm">
+        <div 
+          class="h-full rounded-full bg-customAccent transition-all duration-1000 ease-out" 
+          style="width: 95%"
+        ></div>
+      </div>
+    </div>
+  
+    <div class="space-y-2 p-3 rounded-lg hover:bg-stone-50 transition-colors duration-300 text-left">
+      <div class="flex justify-between text-sm font-semibold">
+        <span class="opacity-90 text-stone-800">Design Systems &amp; UI Patterns</span>
+        <span class="font-mono text-xs text-customAccent">90%</span>
+      </div>
+      <div class="w-full bg-stone-200/50 rounded-full h-2 overflow-hidden backdrop-blur-sm">
+        <div 
+          class="h-full rounded-full bg-customAccent transition-all duration-1000 ease-out" 
+          style="width: 90%"
+        ></div>
+      </div>
+    </div>
+  
+    <div class="space-y-2 p-3 rounded-lg hover:bg-stone-50 transition-colors duration-300 text-left">
+      <div class="flex justify-between text-sm font-semibold">
+        <span class="opacity-90 text-stone-800">Data Analytics &amp; Insights</span>
+        <span class="font-mono text-xs text-customAccent">88%</span>
+      </div>
+      <div class="w-full bg-stone-200/50 rounded-full h-2 overflow-hidden backdrop-blur-sm">
+        <div 
+          class="h-full rounded-full bg-customAccent transition-all duration-1000 ease-out" 
+          style="width: 88%"
+        ></div>
+      </div>
+    </div>
+  
+    <div class="space-y-2 p-3 rounded-lg hover:bg-stone-50 transition-colors duration-300 text-left">
+      <div class="flex justify-between text-sm font-semibold">
+        <span class="opacity-90 text-stone-800">Usability Testing</span>
+        <span class="font-mono text-xs text-customAccent">85%</span>
+      </div>
+      <div class="w-full bg-stone-200/50 rounded-full h-2 overflow-hidden backdrop-blur-sm">
+        <div 
+          class="h-full rounded-full bg-customAccent transition-all duration-1000 ease-out" 
+          style="width: 85%"
+        ></div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Styled Footer -->
+  <footer class="bg-[#1C1D1A] text-stone-400 py-10 border-t border-stone-800 text-center mt-auto">
+    <div class="max-w-7xl mx-auto px-6 space-y-3 font-sans">
+      <p class="text-xs font-semibold tracking-wider text-white uppercase">
+        Bhargavi Bandaru • Academic Portfolio
+      </p>
+      <p class="text-[11px] opacity-75">
+        © 2026 Bhargavi Bandaru. All rights reserved. Graduate Scholar, Indiana Wesleyan University.
+      </p>
+      <p class="text-[9px] opacity-40 font-mono tracking-widest uppercase">
+        Exported Offline Edition
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= DETAILED MODAL ================= -->
+  <div id="project-detail-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+    <div class="absolute inset-0 bg-stone-900/40 backdrop-blur-sm" onclick="closeProjectModal()"></div>
+    
+    <div class="relative bg-white border border-stone-200 w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] text-left animate-in fade-in zoom-in duration-200">
+      <!-- Close Button -->
+      <button 
+        type="button" 
+        onclick="closeProjectModal()"
+        class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors cursor-pointer"
+      >
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Scrollable content -->
+      <div class="overflow-y-auto flex-grow">
+        <div class="relative h-64 md:h-80 bg-stone-100">
+          <img 
+            id="modal-image" 
+            src="" 
+            alt="Project image"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute bottom-4 left-6">
+            <span id="modal-category" class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans shadow-sm border border-stone-200/20 text-white">
+              Category
+            </span>
+          </div>
+        </div>
+
+        <div class="p-6 md:p-8 space-y-6">
+          <div class="space-y-3">
+            <h3 id="modal-title" class="text-2xl md:text-3xl font-serif font-bold text-stone-900 leading-tight">Project Title</h3>
+            
+            <div id="modal-tags" class="flex flex-wrap gap-1.5 pt-1">
+              <!-- Tags populated dynamically -->
+            </div>
+          </div>
+
+          <div class="border-t border-stone-100 pt-5 space-y-4 font-serif text-sm md:text-base leading-relaxed text-stone-700">
+            <p id="modal-detailed-desc" class="whitespace-pre-line"></p>
+          </div>
+
+          <!-- Attachments Section -->
+          <div id="modal-attachments-wrapper" class="border-t border-stone-100 pt-5 space-y-2.5 hidden">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-stone-400 font-sans">Attachments & Documents</div>
+            <div id="modal-attachments" class="flex flex-wrap gap-1.5">
+              <!-- Attachments populated dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sticky footer actions -->
+      <div class="border-t border-stone-100 bg-stone-50 px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div id="modal-links" class="flex items-center gap-3">
+          <!-- Links populated dynamically -->
+        </div>
+        <button 
+          type="button" 
+          onclick="closeProjectModal()"
+          class="w-full sm:w-auto px-5 py-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold font-sans tracking-wide rounded-lg transition-colors cursor-pointer"
+        >
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript and Interactions -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Tab switcher state
+    function switchTab(tabId) {
+      // Hide all views
+      document.querySelectorAll('.view-section').forEach(view => {
+        view.classList.add('hidden');
+      });
+      // Show selected view
+      document.getElementById('view-' + tabId).classList.remove('hidden');
+
+      // Update button highlights
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active-tab-btn');
+      });
+      document.getElementById('tab-btn-' + tabId).classList.add('active-tab-btn');
+
+      // Scroll to top of window
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Navigating from Featured list to specific projects
+    function navigateToProjects(projectId) {
+      switchTab('projects');
+      setTimeout(() => {
+        const card = document.getElementById('project-source-' + projectId);
+        if (card) {
+          openProjectModal(projectId);
+        }
+      }, 300);
+    }
+
+    // Projects list category filters
+    let currentCategory = 'all';
+    function setProjectFilter(category) {
+      currentCategory = category;
+      
+      // Highlight filter button
+      document.querySelectorAll('[id^="filter-"]').forEach(btn => {
+        btn.classList.remove('active-filter-pill');
+      });
+      document.getElementById('filter-' + category).classList.add('active-filter-pill');
+
+      filterProjects();
+    }
+
+    // Live local client-side search and filter combined
+    function filterProjects() {
+      const searchVal = document.getElementById('search-input').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.project-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const title = card.getAttribute('data-title');
+        const tags = card.getAttribute('data-tags');
+        const description = card.getAttribute('data-description');
+
+        const matchesCategory = currentCategory === 'all' || category === currentCategory;
+        const matchesSearch = !searchVal || 
+                              title.includes(searchVal) || 
+                              tags.includes(searchVal) || 
+                              description.includes(searchVal);
+
+        if (matchesCategory && matchesSearch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Show/hide empty state
+      const emptyState = document.getElementById('projects-empty-state');
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+      }
+    }
+
+    // Project Dynamic Detail Modal opening
+    function openProjectModal(projectId) {
+      const srcNode = document.getElementById('project-source-' + projectId);
+      if (!srcNode) return;
+
+      const title = srcNode.querySelector('.src-title').textContent;
+      const catLabel = srcNode.querySelector('.src-category-label').textContent;
+      const catColor = srcNode.querySelector('.src-category-color').textContent;
+      const imageUrl = srcNode.querySelector('.src-image').textContent;
+      const detailedDesc = srcNode.querySelector('.src-detailed-desc').textContent;
+      const tagsHtml = srcNode.querySelector('.src-tags-html').innerHTML;
+      const attachmentsHtml = srcNode.querySelector('.src-attachments-html').innerHTML;
+      const linksHtml = srcNode.querySelector('.src-links-html').innerHTML;
+
+      // Populate Modal elements
+      document.getElementById('modal-image').src = imageUrl;
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-detailed-desc').textContent = detailedDesc;
+      document.getElementById('modal-tags').innerHTML = tagsHtml;
+      
+      // Category tag classes
+      const catNode = document.getElementById('modal-category');
+      catNode.textContent = catLabel;
+      catNode.className = "px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase font-sans shadow-sm border border-stone-200/20 text-white " + catColor;
+
+      // Attachments list
+      const attachmentsWrapper = document.getElementById('modal-attachments-wrapper');
+      const attachmentsContainer = document.getElementById('modal-attachments');
+      if (attachmentsHtml.trim()) {
+        attachmentsContainer.innerHTML = attachmentsHtml;
+        attachmentsWrapper.classList.remove('hidden');
+      } else {
+        attachmentsWrapper.classList.add('hidden');
+      }
+
+      // Links container
+      document.getElementById('modal-links').innerHTML = linksHtml;
+
+      // Open Modal view
+      const modal = document.getElementById('project-detail-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    // Modal closing
+    function closeProjectModal() {
+      const modal = document.getElementById('project-detail-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Handle escape key to close modal
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeProjectModal();
+      }
+    });
+  </script>
+</body>
+</html>
